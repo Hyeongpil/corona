@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/corona_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="개요"
+        android:textSize="@dimen/tv_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="코로나바이러스 계열의 변종인 SARS-CoV-2에 의해 발병하는 급성 호흡기 감염병이다."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="특징"
+        android:textSize="@dimen/tv_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019년 12월부터 중국에서 최초 보고되고 퍼져서 현재까지 전 세계에서 지속되고 있는 범유행전염병이자 사람과 동물 모두 감염되는 인수공통전염병이다. 또한 제1급감염병 신종감염병증후군의 법정감염병이다. 2019년 12월 12일 최초 보고 내용에 따르면 2019년 11월 17일에 중국 후베이성 우한시에서 최초로 발생하였다.
+2020년 10월 6일, WHO는 무증상 감염자 같은 곳곳에 숨은 전파자를 감안하여 실제 통계치보다 20배 이상 많은 전 세계 인구의 약 10%(약 7억 8,000만 명)가 코로나19에 걸린 것으로 추정된다고 밝혔다."
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

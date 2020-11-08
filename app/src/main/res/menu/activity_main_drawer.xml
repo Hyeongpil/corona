@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_behavior"
+            android:icon="@drawable/baseline_accessibility_new_black_24dp"
+            android:title="국민행동요령" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/baseline_announcement_black_24dp"
+            android:title="문자\u0026뉴스" />
+        <item
+            android:id="@+id/nav_disaster_sms"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="재난문자" />
+        <item
+            android:id="@+id/nav_disaster_news"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="재난뉴스" />
+        <item
+            android:id="@+id/nav_phone"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="긴급전화" />
+    </group>
+</menu>

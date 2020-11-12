@@ -1,4 +1,4 @@
-package com.example.coronavirus.restclient.dto;
+package com.example.coronavirus.restclient.dto.sido;
 
 import java.util.ArrayList;
 

@@ -1,16 +1,12 @@
 package com.example.coronavirus;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.coronavirus.restclient.CoronaClient;
-import com.example.coronavirus.restclient.dto.Corona;
+import com.example.coronavirus.restclient.dto.corona.Corona;
 import com.example.coronavirus.util.GlobalApplication;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
@@ -25,7 +21,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

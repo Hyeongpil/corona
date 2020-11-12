@@ -1,4 +1,4 @@
-package com.example.coronavirus.restclient.dto;
+package com.example.coronavirus.restclient.dto.corona;
 
 public class Items
 {

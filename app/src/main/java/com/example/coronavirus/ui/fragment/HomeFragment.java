@@ -15,11 +15,13 @@ import androidx.fragment.app.Fragment;
 
 import com.example.coronavirus.R;
 import com.example.coronavirus.restclient.CoronaClient;
-import com.example.coronavirus.restclient.dto.Corona;
-import com.example.coronavirus.restclient.dto.Item;
+import com.example.coronavirus.restclient.dto.corona.Corona;
+import com.example.coronavirus.restclient.dto.corona.Item;
 import com.example.coronavirus.ui.CoronaInfo;
+import com.example.coronavirus.ui.CoronaNews;
 import com.example.coronavirus.ui.CoronaStarted;
 import com.example.coronavirus.ui.FirstActivity;
+import com.example.coronavirus.ui.SidoCorona;
 import com.example.coronavirus.util.GlobalApplication;
 
 import java.text.SimpleDateFormat;
@@ -91,7 +93,7 @@ public class HomeFragment extends Fragment {
 
     @OnClick(R.id.btn_home_disease)
     void diseaseCliCkListener() {
-        Log.e(TAG, "diseaseCliCkListener: ");
+        getActivity().startActivity(new Intent(getActivity(), SidoCorona.class));
     }
 
     @OnClick(R.id.btn_home_first)
@@ -114,6 +116,11 @@ public class HomeFragment extends Fragment {
     @OnClick(R.id.btn_home_screening_center)
     void screeningCenterClickListener() {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.mohw.go.kr/react/popup_200128_3.html")));
+    }
+
+    @OnClick(R.id.btn_home_news)
+    void newsClickListener(){
+        startActivity(new Intent(getActivity(), CoronaNews.class));
     }
 
 }

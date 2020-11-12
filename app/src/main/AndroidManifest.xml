@@ -37,6 +37,8 @@
         <activity android:name=".ui.FirstActivity"/>
         <activity android:name=".ui.CoronaInfo"/>
         <activity android:name=".ui.CoronaStarted"/>
+        <activity android:name=".ui.SidoCorona"/>
+        <activity android:name=".ui.CoronaNews"/>
     </application>
 
 </manifest>

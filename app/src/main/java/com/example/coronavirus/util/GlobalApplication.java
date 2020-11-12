@@ -3,7 +3,7 @@ package com.example.coronavirus.util;
 import android.app.Activity;
 import android.app.Application;
 
-import com.example.coronavirus.restclient.dto.Corona;
+import com.example.coronavirus.restclient.dto.corona.Corona;
 
 public class GlobalApplication extends Application {
     final static String TAG = GlobalApplication.class.getSimpleName();

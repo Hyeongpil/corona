@@ -1,11 +1,7 @@
-package com.example.coronavirus.restclient.dto;
+package com.example.coronavirus.restclient.dto.sido;
 
-import org.simpleframework.xml.Element;
-import org.simpleframework.xml.Root;
-
-
-public class Corona {
-
+public class Response
+{
     private Header header;
 
     private Body body;
@@ -35,5 +31,4 @@ public class Corona {
     {
         return "ClassPojo [header = "+header+", body = "+body+"]";
     }
-
 }

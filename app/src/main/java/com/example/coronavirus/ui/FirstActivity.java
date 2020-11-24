@@ -23,6 +23,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -66,10 +67,33 @@ public class FirstActivity extends AppCompatActivity implements OnMapReadyCallba
         mGoogleMap = googleMap;
         final LatLng palace = new LatLng(37.5773616,126.9744957);
         googleMap.setOnMapLoadedCallback(() -> {
+            setMarker();
             mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(palace));
             mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(15));
             Log.e(TAG, "onMapReady: 제발 지도야 나와라" );
         });
+    }
+
+    /**
+     * 확진자 핀 찍는 메소드
+     */
+    private void setMarker(){
+       createMarker(37.5773626, 126.9711241);
+        createMarker(37.5774626, 126.9724967);
+        createMarker(37.5573626, 126.9124117);
+        createMarker(37.5575626, 126.9774124);
+    }
+
+    /**
+     * 지도 마커 생성 메소드
+     * @param lat
+     * @param lng
+     */
+    private void createMarker(double lat, double lng){
+        LatLng corona = new LatLng(lat, lng);
+        MarkerOptions markerOptions = new MarkerOptions();
+        markerOptions.position(corona);
+        mGoogleMap.addMarker(markerOptions);
     }
 
     //여기부터는 GPS 활성화를 위한 메소드들
